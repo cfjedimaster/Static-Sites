@@ -1,0 +1,7 @@
+h1 Welcome to Harp.
+h3 This is yours to own. Enjoy.
+
+for article, slug in public.articles._data
+  a(href="/articles/#{ slug }.html")
+    h2= article.title
+  p #{article.excerpt}

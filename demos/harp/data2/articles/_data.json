@@ -1,0 +1,12 @@
+{
+	"one":{
+		"title":"Article One",
+		"excerpt":"This story is about one.",
+		"tags":["star wars", "star trek"]
+	},
+	"two": {
+		"title":"Article Two",
+		"excerpt":"This story is about two.",
+		"tags":["cordova", "ios"]		
+	}
+}

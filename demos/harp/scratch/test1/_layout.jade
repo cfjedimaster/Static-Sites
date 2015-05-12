@@ -1,0 +1,9 @@
+doctype
+html
+  head
+    link(rel="stylesheet" href="/main.css")
+  body
+    != yield
+    
+ footer 
+  p Copyright &copy; #{(new Date()).getFullYear()} Created by #{name}
