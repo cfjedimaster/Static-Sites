@@ -55,7 +55,7 @@
 				<section>
 					<h2>Who am I?</h2>
 					<ul style="float:left;width:60%">
-            <li>Raymond Camden</li>
+			            <li>Raymond Camden</li>
 						<li>Developer Advocate for IBM</li>
 						<li>MobileFirst, Bluemix, Cordova/PhoneGap, Web Standards</li>
 						<li>Blogging at raymondcamden.com</li>
@@ -64,6 +64,12 @@
 					<img src="img/ray.png">
 				</section>
 
+				<section>
+					<h2>Assets</h2>
+					<p>
+						https://github.com/cfjedimaster/Static-Sites
+					</p>
+				</section>
 				<section>
 					<h2>General Game Plan</h2>
 					<ul>
@@ -74,7 +80,7 @@
 								<li class="fragment">Not as good as bringing sexy back</li>
 							</ul>
 						</li>
-						
+						<li class="fragment">Hosting Options</li>
 					</ul>
 				</section>
 
@@ -170,9 +176,6 @@
 							<img src="img/simple.jpg">
 					</section>
 
-					<section data-background="img/spock_st_freakout.jpg">
-					</section>
-
 				</section>
 
 				<!-- How -->
@@ -184,7 +187,7 @@
 					<section>
 						<h2>Static Site Options</h2>
 						<ul>
-							<li class="fragment">Editors</li>
+							<li class="fragment">Desktop Programs</li>
 							<li class="fragment">Generators</li>
 						</ul>
 					</section>
@@ -210,10 +213,9 @@
 
 					<section>
 							<h2>For Today</h2>
-							<ul>
-								<li>Harp</li>
-								<li>Jekyll (my favorite, but I hate the name)</li>
-							</ul>
+							<p>
+								Harp
+							</p>
 					</section>
 
 				</section>
@@ -236,7 +238,7 @@
 					
 					<section>
 						<h2>Installation</h2>
-						<code>sudo npm install -g harpjs</code>
+						<code>sudo npm install -g harp</code>
 					</section>
 					
 					<section>
@@ -257,27 +259,77 @@
 					<section>
 						<h2>Demos (Initial)</h2>
 					</section>
-					
+
 					<section>
-						<h2>Organization and Data</h2>
+						<h2>Organization</h2>
 						<ul>
 							<li class="fragment">Harp lets you create hidden assets, files, etc</li>
-							<li class="fragment">Harp lets you define global variables (_harp.json) and metadata (_data.json)</li>
+							<li class="fragment">Anything with an _ in front is hidden</li>
+							<li class="fragment">You can use a "public" folder for your site</li>
 						</ul>
 					</section>
 					
 					<section>
-						<h2>Demos (Org/Code)</h2>
+						<h2>Demos</h2>
+					</section>
+					
+					<section>
+						<h2>Data</h2>
+						<ul>
+							<li class="fragment">Global data</li>
+							<li class="fragment">Metadata</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Global Data</h2>
+						<ul>
+							<li class="fragment">harp.json in Public Mode</li>
+							<li class="fragment">_harp.json in "Root Style" Mode</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Example</h2>
+						<pre><code data-trim="true">
+{
+	"globals":{
+		"sitename":"Ray's World",
+		"email":"raymondcamden@gmail.com"
+	}
+}							
+						</code></pre>
+					</section>
+					
+					<section>
+						<h2>Demos (Data 1)</h2>
+					</section>
+
+					<section>
+						<h2>Metadata</h2>
+						<ul>
+							<li class="fragment">_data.json in a folder</li>
+							<li class="fragment">Associated with current folder</li>
+							<li class="fragment">If you use an object w/ keys that match file names, something special happens</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Demos (Data 2)</h2>
 					</section>
 					
 					<section>
 						<h2>More Stuff</h2>	
 						<ul>
-							<li>Prod/Dev code</li>
-							<li>Directory contents</li>
+							<li>Prod/Dev code (via <code>environment</code>)</li>
 							<li>"Current" scope (for nav)</li>
+							<li>Directory contents</li>
 							<li>404 support (?)</li>
 						</ul>
+					</section>
+
+					<section>
+						<h2>Demos (More!)</h2>
 					</section>
 					
 					<section>
@@ -297,99 +349,6 @@
 					</section>
 				</section>
 
-				<!-- Jekyll -->
-				<section>
-					<section>
-						<h1>Jekyll</h1>
-					</section>
-
-
-					<section>
-						<h2>Details</h2>
-						<ul>
-							<li>jekyllrb.com</li>
-							<li>OSX, Unix only :(</li>
-							<li>templates: Liquid, Markdown, and Textile</li>
-							<li>preprocessers: Sass and CoffeeScript</li>
-							<li>YAML for page metadata</li>
-							<li>Kinda Blog-centric</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Installation</h2>
-						<p>
-							First, do Ruby and RubyGems (jekyllrb.com/docs/installation/). Then
-							do Node if you want CoffeeScript support.
-						</p>
-						<p />
-						<code>gem install jekyll</code>
-					</section>
-					
-					<section>
-						<h2>CLI</h2>
-						<ul>
-							<li class="fragment"><code>new</code> - new project</li>
-							<li class="fragment"><code>serve</code> - develop</li>
-							<li class="fragment"><code>build</code> - generate</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Demos (Initial)</h2>
-					</section>
-
-					<section>
-						<h2>Data</h2>
-						<ul>
-							<li>JSON, YAML, CSV</li>
-							<li>Available via site.data.X</li>
-							<li>Further subdivided by folders</li>
-							<li>Site-wide data</li>
-						</ul>
-					</section>	
-
-					<section>
-						<h2>Demos (Data stuff)</h2>
-					</section>
-					
-					<!--
-						plugins: generators, converters, commands, tags
-						--->
-					<section>
-						<h2>More</h2>
-						<ul>
-							<li class="fragment">Pagination</li>
-							<li class="fragment">Draft support</li>
-							<li class="fragment">Plugins
-								<ul>
-									<li class="fragment">Generators</li>
-									<li class="fragment">Converters</li>
-									<li class="fragment">Commands</li>
-									<li class="fragment">Tags</li>
-								</ul>
-								
-							</li>
-						</ul>
-					</section>	
-					
-					<section>
-						<h2>Production Sites</h2>
-						<ul>
-							<li>javascriptcookbook.com</li>
-						</ul>
-					</section>
-					
-					<section>
-						<h2>Summary</h2>
-						<ul>
-							<li>Not quite as simple</li>
-							<li>Lots and lots and lots of power</li>
-						</ul>
-					</section>
-										
-				</section>
-
 				<!-- Bringing Dynamic Back -->
 				<section>
 						<section>
@@ -403,6 +362,7 @@
 								<li class="fragment">Comments</li>
 								<li class="fragment">Search</li>
 								<li class="fragment">Calendars</li>
+								<li class="fragment">"Data"</li>
 							</ul>
 						</section>
 
@@ -420,7 +380,7 @@
 							<h2>Demo</h2>
 							<p>
 								<i>Ray, since I know you'll forget, use the form
-								on your blog.</i>
+								on JSCB.</i>
 							</p>
 						</section>
 
@@ -457,7 +417,7 @@
 							<h2>Calendars</h2>
 							<ul>
 								<li>Google Calendar</li>
-								<li>FullCaledar</li>
+								<li>FullCalendar</li>
 								<li>EventBrite</li>
 							</ul>
 						</section>
@@ -465,8 +425,17 @@
 						<section>
 							<h2>Demo</h2>
 							<p>
-								<i>Pysche - no demo!</i>
+								<i>Pysche</i>
 							</p>
+						</section>
+
+						<section>
+							<h2>Data</h2>
+							<ul>
+								<li>Parse</li>
+								<li>Firebase</li>
+								<li>And more I don't know about</li>
+							</ul>
 						</section>
 
 				</section>
