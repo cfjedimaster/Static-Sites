@@ -8,5 +8,10 @@
 		"title":"Article Two",
 		"excerpt":"This story is about two.",
 		"tags":["cordova", "ios"]		
+	},
+	"three": {
+		"title":"Article 3",
+		"excerpt":"This story is about two.",
+		"tags":["kittens", "beer"]		
 	}
 }

@@ -1,0 +1,14 @@
+<h1>Welcome to the Blog</h1>
+
+<ul>
+<% for(article in public.articles._data) { %>
+	<li>
+		<a href="articles/<%= article %>.html"><%= public.articles._data[article].title %></a><br/>
+			<%= public.articles._data[article].excerpt %>
+	</li>
+<% } %>
+
+<!--
+uncomment this after you talk about contents
+-->
+<% console.dir(public) %>

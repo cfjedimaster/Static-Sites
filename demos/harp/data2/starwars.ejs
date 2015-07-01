@@ -1,0 +1,17 @@
+<h1>Welcome to the Blog - Star Wars</h1>
+
+<ul>
+<% 
+
+swArticles = Object.keys(public.articles._data).filter(function(x) {
+	return public.articles._data[x].tags.indexOf("star wars") >= 0;
+});
+
+for(var x=0;x<swArticles.length;x++) { 
+	article = public.articles._data[swArticles[x]];
+%>
+	<li>
+		<a href="articles/<%= swArticles[x] %>.html"><%= article.title %></a><br/>
+			<%= article.excerpt %>
+	</li>
+<% } %>
