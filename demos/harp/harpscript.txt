@@ -11,3 +11,5 @@ Show example_with_ejs
 SECOND DEMO
 
 just public vs nonpublic
+talk about the weird harp.json in root thing
+
