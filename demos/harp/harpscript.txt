@@ -1,0 +1,13 @@
+FIRST DEMO
+
+Show creating the default site.
+Show the Jade, the layout.
+Show it uses preproc ext, but you request via real data
+Show output
+Do a compile
+
+Show example_with_ejs
+
+SECOND DEMO
+
+just public vs nonpublic
